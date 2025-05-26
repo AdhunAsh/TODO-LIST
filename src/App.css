@@ -1,0 +1,167 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin:0px 0px 0px 360px;
+  background: white;
+  width: 600px;
+  height: 600px;
+  /* margin: auto; */
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+  padding: 30px;
+}
+
+h1 {
+  height: 120px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #6B3EFF, #B22EFF);
+  padding: 20px;
+  border-radius: 15px 15px 0 0;
+  margin: -30px -30px 20px -30px;
+  font-weight: 400;
+}
+
+.input-box {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: whitesmoke;
+  padding: 20px;
+  border-radius: 12px;
+  margin: -80px 0px 0px 27px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.input-box input {
+  padding: 10px;
+  width: 60%;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  outline: none;
+  font-size: 16px;
+  margin-bottom: 15px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.input-box button {
+  background: #ff6b6b;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-box button:hover {
+  background: #ff3b3b;
+}
+/* //////////// */
+
+.task {
+  width: 541px;
+  height: 360px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  margin: 0px 0px 0px 27px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+.task h2 {
+  color:black;
+  margin: 10px 0px 5px 20px;
+  font-weight: 600;
+}
+
+.todo-container {
+  max-height: 400px; /* or whatever height fits your layout */
+  overflow-y: auto;
+  padding-right: 5px;
+
+}
+
+.todo-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 0px 16px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+}
+
+.todo-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.todo-text {
+  font-size: 16px;
+  color: black;
+}
+
+.todo-status {
+  flex: 1;
+  text-align: center;
+}
+
+.todo-delete {
+  flex: 1;
+  text-align: right;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.status.pending {
+  background-color: #88c0ae;
+}
+
+.status.completed {
+  background-color: #84b6f4;
+}
+
+.delete {
+  cursor: pointer;
+  font-size: 18px;
+  color: #d9534f;
+  transition: transform 0.2s;
+  padding: 0px;
+  background-color: white;
+  border: none;
+}
+
+.delete:hover {
+  transform: scale(1.2);
+}
+
+.todo-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.todo-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
